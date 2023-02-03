@@ -1,0 +1,29 @@
+Algorithm for addition of two numbers
+
+Step1: Start
+step2: declare variables num1,num2 and sum.
+step3: Read values for num1,num2.
+step4: Add num1 and num2 and assign the result to a variable sum.
+step5: Display sum
+step6: stop
+
+Algorithm for Area of circle 
+
+Step1: Start
+step2: Read value of Read
+step3: set PI equal to 3.14
+step4: calculate area PI*R*R by this formula
+step5: Print R, Area
+step6: stop
+
+Algorithm for Sum of all Even Numbers 
+
+step1: Create a funtion 
+step2: Declare a variable to store the sum of the even numbers upto N-sum = 0
+step3: Run for loop from 0 to N
+step4: Check if the given numbers is an even number or not.
+step5: If J % 2 == 0 then calculate the sum of even Numbers.
+step6: Return the sum 
+Step7: Create a variable named "num" to store the value of N.
+step8: call the funtion and pass "num" as an argument in it.
+step9: print the output.
