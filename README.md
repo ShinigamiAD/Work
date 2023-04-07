@@ -1,14 +1,63 @@
-module 3
-Table Name : Employee EMPLOYEE_ID FIRST_NAME LAST_NAME SALARY JOINING_DATE DEPARTMENT MANAGER_ID 1 John Abraham 1000000 01-JAN-13 12.00.00 AM Banking NULL 2 Michael Clarke 800000 01-JAN-13 12.00.00 AM Insurance 1 3 Roy Thomas 700000 01-FEB-13 12.00.00 AM Banking 1 4 Tom Jose 600000 01-FEB-13 12.00.00 AM Insurance 2 5 Jerry Pinto 650000 01-FEB-13 12.00.00 AM Insurance 3 6 Philip Mathew 750000 01-JAN-13 12.00.00 AM Services 3 7 TestName1 123 650000 01-JAN-13 12.00.00 AM Services 2 8 TestName2 Lname% 600000 01-FEB-13 12.00.00 AM Insurance 2 Table Name : Incentives EMPLOYEE_REF_ID INCENTIVE_DATE INCENTIVE_AMOUNT 1 01-FEB-13 5000 2 01-FEB-13 3000 3 01-FEB-13 4000 1 01-JAN-13 4500 2 01-JAN-13 3500 
+Label : "Please select your technology :".
+		- Consider following set of radio buttons :-
+		"PHP", "ASP.NET", "ASP", "JSP", "PERL", "Cold Fusion", "Other". Layout these buttons in a Horizontal manner.
+		- Clicking on a particular radio button should display the related technology name besides label : "You have selected : ".
+		- Use only one "span" HTML element for displaying the related message.
+		- Note that radio button should be selectable by clicking on the corresponding label.
+    
+    - Consider following set of radio buttons :-
+		  "PHP", "ASP.NET", "ASP", "JSP", "PERL", "Cold Fusion", "Other". Layout these buttons in a Horizontal manner.
+		- Clicking on a particular radio button should display the related technology name besides label : "You have  selected : ".
+		- Use multiple "span" HTML element for displaying the related message.
+		- Note that radio button should be selectable by clicking on the corresponding label.
+    
+    	- Clicking on different buttons ("button" input type) should submit the form to different pages.
+		- Consider "numeric1.htm" and "numeric2.htm" files for this.
+		- Label 1 : Please click on "Submit 1" button for opening numeric1.htm
+		- Label 2 : Please click on "Submit 2" button for opening numeric2.htm
+		- Clicking on "Submit 1" button will open "numeric1.htm" while clicking on "Submit 2" button will open "numeric2.htm" in the same window.
+		- Use Browser back button for traversing among various pages.
+    
+    Checking/Un-checking "Check All" check box should check/un-check all
+		  the other corresponding check boxes.
+		  Also, if "Check All" check box is checked and
+		  if user un-checks any other check box then "Check All" check box should be un-checked.
+		- When all check boxes are checked and "Check All" check box should get checked.
+		- Consider a check-box with "Check All" label.
+		- Other checkboxes presented in a vertical manner :
+          	 (i) USA (ii) UK (iii) India (iv) Asia Pacific (v) Australia(vi) Middle East
+		- Note that checkbox should be selectable by clicking on the corresponding label.
+    
+    date
+    - Date entered by the user should be checked for whether it is a Valid Date or not.
+		  Entered date should be in "MM-DD-YYYY" format.
+		  Display the Date Format along with the Text Box.
+		
+		- You are required to perform following checks :
 
+			- Entered characters should be digits only.
+			- Month should be within the range 1 to 12.
+			- Days should be within the range 1 to 31.
+				Check the entered Days and its corresponding Month.
+			E.g.	1) Month of April cannot have days less than 1 and more than 30 days.
+				2) Month of February cannot have days less than 1 and more than 28 days.
+				   If the Current Year is a Leap Year then User can provide 29 days for
+				   the month of February.
 
+		 - Error messages :
 
+			- "Please enter date in MM-DD-YYYY format"
+			- "Invalid date. Please enter date in MM-DD-YYYY format"
+			- "Invalid month. Month should be within the range 1 to 12"
+			- "Invalid day. Day should be within the range 1 to 31" (or as applicable)
 
-1. Get difference between JOINING_DATE and INCENTIVE_DATE from employee and incentives table 2. Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000 3. Select first_name, incentive amount from employee and incentives table for all employees even if they didn't get incentives. 4. Select EmployeeName, ManagerName from the employee table. 5. Select first_name, incentive amount from employee and incentives table for all employees even if they didn't get incentives and set incentive amount as 0 for those employees who didn't get incentives. 6. Get department,total salary with respect to a department from employee table. 7. Get department,total salary with respect to a department from employee table order by total salary descending 8. Get department wise maximum salary from employee table order by salary ascending 9. Get department wise minimum salary from employee table order by salary ascending 10. Select department,total salary with respect to a department from employee table where total salary greater than 800000 order by Total_Salary descending
-module-4
-EMPLOYEE_ID FIRST_NAME LAST_NAME SALARY JOINING_DATE DEPARTMENT MANAGER_ID 1 John Abraham 1000000 01-JAN-13 12.00.00 AM Banking NULL 2 Michael Clarke 800000 01-JAN-13 12.00.00 AM Insurance 1 3 Roy Thomas 700000 01-FEB-13 12.00.00 AM Banking 1 4 Tom Jose 600000 01-FEB-13 12.00.00 AM Insurance 2 5 Jerry Pinto 650000 01-FEB-13 12.00.00 AM Insurance 3 6 Philip Mathew 750000 01-JAN-13 12.00.00 AM Services 3 7 TestName1 123 650000 01-JAN-13 12.00.00 AM Services 2 8 TestName2 Lname% 600000 01-FEB-13 12.00.00 AM Insurance 2 1. Create a view Select Banking as 'Bank Dept', Insurance as 'Insurance Dept' and Services as 'Services Dept' from employee table 2. Select employee details from employee table if data exists in incentive table ? 3. Find Salary of the employee whose salary is more than Roy Salary 4. Create a view to select FirstName,LastName,Salary,JoiningDate,IncentiveDate and IncentiveAmount 5. Create a view to select Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000 6. Create a View to Find the names (first_name, last_name), job, department number, and department name of the employees who work in LondonCreate a view to get the department name and number of employees in the department. 7. Create a View to get the department name and number of employees in the department. 8. Find the employee ID, job title, number of days between ending date and starting date for all jobs in department 90 from job history. 9. Write a query to display the department name, manager name, and city. 10. Create a View to display department name, name (first_name, last_name), hire date, salary of the manager for all managers whose experience is more than 15 years.
-module-5
-1. Create a Store Procedure Select Banking as 'Bank Dept', Insurance as 'Insurance Dept' and Services as 'Services Dept' from employee table 2. Select employee details from employee table if data exists in incentive table ? 3. Find Salary of the employee whose salary is more than Roy Salary 4. Create a view to select FirstName,LastName,Salary,JoiningDate,IncentiveDate and IncentiveAmount 5. Create a view to select Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+		- Final message : You have entered valid date. Its "20-10-1980". Thank you.
+      
+      - Check if the value entered in Text Box is a numeric value or not,
+		i.e., text characters and even null/empty values should not be allowed.
+		- Error message needs to be : In case of empty field - "Please enter any numeric value" and
+		in case of non-numeric value - "Only numeric values are allowed. Please re-enter the value". 
+		Final message - "Entered value is a numeric value".
+		- Provide appropriate focus to the error fields.
 
-6. 5 Students Name, Address, City, DOB, Standard need to be inserted in the student table, need to fetch these result from json variable. and select output in the json format Note: use exception handling 7. 5 Students Name, Address, City, DOB, Standard need to be inserted in the student table, need to fetch these result from json variable using input parameter. and select output in the json format. Note: use exception handling 8 Create a procedure which will accept StudentId, StudentName, CourseID, CourseName as a input parameter in json format and insert record in 2 table student and course table
-
+	DO NOT USE in-built javascript "isNaN()" function.      MIGHT BE USE REGULAR EXPRESSION
